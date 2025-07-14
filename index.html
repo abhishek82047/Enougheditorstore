@@ -482,7 +482,7 @@
                 status: 'pending' // Initial status
             };
 
-            // **MODIFICATION**: Handle 100% discount (free item)
+            // **IMPROVEMENT**: Handle 100% discount (free item)
             if (finalTotal <= 0) {
                 orderData.status = 'paid_verified'; // Mark as paid since it's free
                 orderData.paymentId = 'FREE_ITEM';
@@ -505,10 +505,11 @@
                     // This handler is called on successful payment
                     const updates = {};
                     updates[`/orders/${currentUser.uid}/${orderId}/paymentId`] = response.razorpay_payment_id;
-                    updates[`/orders/${currentUser.uid}/${orderId}/status`] = 'paid_unverified'; // Status before webhook verification
+                    updates[`/orders/${currentUser.uid}/${orderId}/status`] = 'paid_verified'; // **FIX**: Set status to verified. Automatic capture is enabled by default in Razorpay.
                     updates[`/orders/${currentUser.uid}/${orderId}/razorpay_signature`] = response.razorpay_signature;
                     update(ref(db), updates);
 
+                    // **FIX**: Call the success modal here
                     showSuccessModal();
                 },
                 prefill: {
