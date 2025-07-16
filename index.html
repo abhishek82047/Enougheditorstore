@@ -131,7 +131,36 @@
         .limited-stock-badge { background-color: var(--warning-bg); color: var(--warning-color); border: 1px solid var(--warning-color); padding: 0.25rem 0.6rem; border-radius: 6px; font-size: 0.8rem; font-weight: 700; }
         .product-countdown-timer { background-color: rgba(var(--card-bg-rgb), 0.85); backdrop-filter: blur(5px); border-top: 1px solid var(--border-color); text-align: center; padding: 0.5rem; font-weight: 500; font-size: 0.9rem; color: var(--danger-color); }
         .product-countdown-timer i { vertical-align: middle; }
-        .toast-container { z-index: 1100; bottom: 1rem; } .toast.toast-custom { border-radius: 8px !important; border-left: 5px solid; } .toast.toast-custom.toast-success { background-color: var(--success-bg) !important; border-color: var(--success-color); } .toast.toast-custom.toast-danger { background-color: var(--danger-bg) !important; border-color: var(--danger-color); } .toast.toast-custom.toast-warning { background-color: var(--warning-bg) !important; border-color: var(--warning-color); } .toast.toast-custom.toast-info { background-color: var(--info-bg) !important; border-color: var(--info-color); } .toast.toast-custom .toast-body, .toast.toast-custom .btn-close { color: var(--text-color) !important; opacity: 0.8; } .product-gallery .main-image-container { margin-bottom: 1rem; position: relative; } .product-gallery .main-image { width: 100%; aspect-ratio: 6 / 7; object-fit: cover; border-radius: 1rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: opacity 0.3s; } .product-gallery .thumbnail-strip { display: flex; gap: 0.75rem; flex-wrap: wrap; } .product-gallery .thumbnail { width: 60px; height: 70px; object-fit: cover; border-radius: 0.5rem; cursor: pointer; border: 2px solid transparent; transition: border-color 0.2s, transform 0.2s; opacity: 0.7; } .product-gallery .thumbnail:hover { transform: scale(1.05); opacity: 1; } .product-gallery .thumbnail.active { border-color: var(--primary-color); opacity: 1; } .accordion-button { font-weight: 600; } .accordion-button:not(.collapsed) { background-color: var(--secondary-bg); color: var(--text-color); box-shadow: none; } .accordion-item { background-color: var(--card-bg); border-color: var(--border-color); } .star-rating { display: flex; flex-direction: row-reverse; justify-content: flex-end; } .star-rating input { display: none; } .star-rating label { color: #ccc; cursor: pointer; font-size: 2rem; padding: 0 0.1em; transition: color 0.2s; } .star-rating input:checked ~ label, .star-rating:not(:checked) > label:hover, .star-rating:not(:checked) > label:hover ~ label { color: #ffc107; } #giveaway-view .card { max-width: 700px; margin: 0 auto; } #countdown-timer, .sale-countdown-timer { display: flex; justify-content: center; gap: 1rem; text-align: center; } #countdown-timer > div, .sale-countdown-timer > div { background-color: var(--secondary-bg); padding: 0.5rem 1rem; border-radius: 8px; } #countdown-timer > div span, .sale-countdown-timer > div span { display: block; font-size: 2rem; font-weight: 700; color: var(--primary-color); } #countdown-timer > div small, .sale-countdown-timer > div small { font-size: 0.8rem; text-transform: uppercase; color: var(--subtle-text); } .winner-announcement { background-color: var(--success-bg); color: var(--success-color); border: 1px solid var(--success-color); padding: 1.5rem; border-radius: 12px; text-align: center; } .winner-announcement .display-4 { font-weight: 700; } .payment-section { background-color: var(--hero-graphic-bg); } [data-bs-theme="dark"] .payment-section { background-color: #1c1e21; } .payment-section .main-payment-logo-container { background-color: #ffffff; padding: 2rem; border-radius: 1.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.07); max-width: 550px; margin: 0 auto; } .payment-section .main-payment-logo-container img { max-width: 100%; } .logo-scroller { max-width: 900px; margin: 2.5rem auto 0 auto; overflow: hidden; -webkit-mask-image: linear-gradient(to right, transparent, white 20%, white 80%, transparent); mask-image: linear-gradient(to right, transparent, white 20%, white 80%, transparent); } .logo-scroller-inner { display: flex; align-items: center; width: fit-content; animation: scroll 20s linear infinite; } .logo-scroller-inner:hover { animation-play-state: paused; } .payment-method-logo { background-color: #ffffff; padding: 0.75rem; border-radius: 0.75rem; box-shadow: 0 4px 15px rgba(0,0,0,0.05); height: 50px; display: flex; align-items: center; justify-content: center; margin: 0 1.5rem; } .payment-method-logo img { height: 100%; max-width: 100px; object-fit: contain; } @keyframes scroll { to { transform: translateX(-50%); } } .site-footer { background-color: var(--footer-bg); color: var(--footer-text); transition: background-color 0.4s ease, color 0.4s ease; } .site-footer h5 { color: var(--footer-heading); font-weight: 700; } .site-footer a { color: var(--footer-text); text-decoration: none; transition: color 0.2s; } .site-footer a:hover { color: #ffffff; text-decoration: underline; } .footer-social-icons a { font-size: 1.5rem; margin-right: 1rem; } .mobile-nav { display: none; } .form-check-input:checked { background-color: var(--primary-color); border-color: var(--primary-color); }
+        .toast-container { z-index: 1100; bottom: 1rem; } .toast.toast-custom { border-radius: 8px !important; border-left: 5px solid; } .toast.toast-custom.toast-success { background-color: var(--success-bg) !important; border-color: var(--success-color); } .toast.toast-custom.toast-danger { background-color: var(--danger-bg) !important; border-color: var(--danger-color); } .toast.toast-custom.toast-warning { background-color: var(--warning-bg) !important; border-color: var(--warning-color); } .toast.toast-custom.toast-info { background-color: var(--info-bg) !important; border-color: var(--info-color); } .toast.toast-custom .toast-body, .toast.toast-custom .btn-close { color: var(--text-color) !important; opacity: 0.8; } 
+        
+        /* IMPROVED: Product Gallery Swiper styles */
+        .product-gallery { position: relative; }
+        .product-gallery .product-main-swiper { /* This is the main slider container */
+            width: 100%;
+            height: auto; /* Adjust height dynamically based on image aspect ratio */
+            border-radius: 1rem;
+            overflow: hidden; /* Hide parts of next/prev slides if not fully shown */
+        }
+        .product-gallery .swiper-slide img { 
+            width: 100%; 
+            aspect-ratio: 6 / 7; /* Maintain aspect ratio */
+            object-fit: cover; 
+            border-radius: 1rem; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+            display: block; /* Remove extra space below image */
+        } 
+        /* Removed navigation arrow styles as requested */
+        .product-gallery .swiper-button-next,
+        .product-gallery .swiper-button-prev {
+            display: none; /* Hide arrows */
+        }
+
+        .product-gallery .thumbnail-strip { display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: center; } 
+        .product-gallery .thumbnail { width: 60px; height: 70px; object-fit: cover; border-radius: 0.5rem; cursor: pointer; border: 2px solid transparent; transition: border-color 0.2s, transform 0.2s, opacity 0.2s; /* Added opacity transition */ } 
+        .product-gallery .thumbnail:hover { transform: scale(1.05); opacity: 1; } 
+        .product-gallery .thumbnail.active { border-color: var(--primary-color); opacity: 1; transform: scale(1.05); } /* Slightly enlarge active thumbnail */
+
+        .accordion-button { font-weight: 600; } .accordion-button:not(.collapsed) { background-color: var(--secondary-bg); color: var(--text-color); box-shadow: none; } .accordion-item { background-color: var(--card-bg); border-color: var(--border-color); } .star-rating { display: flex; flex-direction: row-reverse; justify-content: flex-end; } .star-rating input { display: none; } .star-rating label { color: #ccc; cursor: pointer; font-size: 2rem; padding: 0 0.1em; transition: color 0.2s; } .star-rating input:checked ~ label, .star-rating:not(:checked) > label:hover, .star-rating:not(:checked) > label:hover ~ label { color: #ffc107; } #giveaway-view .card { max-width: 700px; margin: 0 auto; } #countdown-timer, .sale-countdown-timer { display: flex; justify-content: center; gap: 1rem; text-align: center; } #countdown-timer > div, .sale-countdown-timer > div { background-color: var(--secondary-bg); padding: 0.5rem 1rem; border-radius: 8px; } #countdown-timer > div span, .sale-countdown-timer > div small { display: block; font-size: 2rem; font-weight: 700; color: var(--primary-color); } #countdown-timer > div small, .sale-countdown-timer > div small { font-size: 0.8rem; text-transform: uppercase; color: var(--subtle-text); } .winner-announcement { background-color: var(--success-bg); color: var(--success-color); border: 1px solid var(--success-color); padding: 1.5rem; border-radius: 12px; text-align: center; } .winner-announcement .display-4 { font-weight: 700; } .payment-section { background-color: var(--hero-graphic-bg); } [data-bs-theme="dark"] .payment-section { background-color: #1c1e21; } .payment-section .main-payment-logo-container { background-color: #ffffff; padding: 2rem; border-radius: 1.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.07); max-width: 550px; margin: 0 auto; } .payment-section .main-payment-logo-container img { max-width: 100%; } .logo-scroller { max-width: 900px; margin: 2.5rem auto 0 auto; overflow: hidden; -webkit-mask-image: linear-gradient(to right, transparent, white 20%, white 80%, transparent); mask-image: linear-gradient(to right, transparent, white 20%, white 80%, transparent); } .logo-scroller-inner { display: flex; align-items: center; width: fit-content; animation: scroll 20s linear infinite; } .logo-scroller-inner:hover { animation-play-state: paused; } .payment-method-logo { background-color: #ffffff; padding: 0.75rem; border-radius: 0.75rem; box-shadow: 0 4px 15px rgba(0,0,0,0.05); height: 50px; display: flex; align-items: center; justify-content: center; margin: 0 1.5rem; } .payment-method-logo img { height: 100%; max-width: 100px; object-fit: contain; } @keyframes scroll { to { transform: translateX(-50%); } } .site-footer { background-color: var(--footer-bg); color: var(--footer-text); transition: background-color 0.4s ease, color 0.4s ease; } .site-footer h5 { color: var(--footer-heading); font-weight: 700; } .site-footer a { color: var(--footer-text); text-decoration: none; transition: color 0.2s; } .site-footer a:hover { color: #ffffff; text-decoration: underline; } .footer-social-icons a { font-size: 1.5rem; margin-right: 1rem; } .mobile-nav { display: none; } .form-check-input:checked { background-color: var(--primary-color); border-color: var(--primary-color); }
 
         /* Testimonials Swiper-specific CSS */
         .testimonials-section { background-color: var(--card-bg); padding: 4rem 0; overflow: hidden; transition: background-color 0.4s ease; }
@@ -203,7 +232,7 @@
                 font-size: 0.65rem;
                 padding: .2em .5em;
             }
-            .toast-container { bottom: 85px; }
+            .toast-container { bottom: 85px; } /* Kept consistent with mobile nav height */
 
             /* Removed radial menu styles as it's no longer used */
             .radial-menu-container, .radial-menu-backdrop {
@@ -224,10 +253,51 @@
             0% { transform: scale(1); opacity: 0.8; }
             100% { transform: scale(1.1); opacity: 1; }
         }
+
+        /* Back to Top Button styles */
+        #back-to-top-btn {
+            position: fixed;
+            bottom: 85px; /* Adjusted to be above mobile nav */
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+            z-index: 1050; /* Above modals but below toast */
+            background-color: var(--primary-color);
+            color: var(--primary-text);
+            border: none; /* Removed border */
+            border-radius: 50%; /* Ensure it remains circular */
+            box-shadow: 0 4px 12px rgba(var(--primary-color-rgb), 0.4); /* Added shadow */
+        }
+
+        #back-to-top-btn.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* New: Scroll Progress Bar */
+        #scroll-progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 4px; /* Adjust thickness */
+            background-color: var(--primary-color);
+            z-index: 1060; /* Above navbar */
+            transition: width 0.1s ease-out; /* Smooth animation for filling */
+        }
     </style>
 </head>
 <body>
-    
+    <!-- NEW: Scroll Progress Bar -->
+    <div id="scroll-progress-bar"></div>
+
     <div id="preloader">
         <div class="skeleton-hero container">
             <div class="row align-items-center g-5">
@@ -322,7 +392,7 @@
                     <div class="col-md-6 col-lg-4"><h5 class="text-uppercase mb-4">For Creators</h5><p><i class="bi bi-people-fill me-2"></i> Affiliate Program (Refer & Earn)</p><p><i class="bi bi-person-fill me-2"></i> <a href="#profile">My Profile</a></p><p><i class="bi bi-envelope-fill me-2"></i> <a href="mailto:enougheditor31@gmail.com">enougheditor31@gmail.com</a></p></div>
                 </div>
                 <hr class="my-4">
-                <p class="text-center mb-0">© 2024 Enough Editor. All Rights Reserved.</p>
+                <p class="text-center mb-0">© 2025 Enough Editor. All Rights Reserved.</p>
             </div>
         </footer>
     </div>
@@ -345,6 +415,11 @@
     <div class="offcanvas offcanvas-bottom" tabindex="-1" id="sortOffcanvas" style="height: auto;"><div class="offcanvas-header"><h5 class="offcanvas-title">Sort By</h5><button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button></div><div class="offcanvas-body" id="sort-offcanvas-body"></div></div>
     
     <div class="toast-container position-fixed start-50 translate-middle-x p-3"></div>
+
+    <!-- NEW: Back to Top Button -->
+    <button id="back-to-top-btn" class="btn btn-primary rounded-circle shadow-lg" title="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
@@ -373,11 +448,14 @@
         let recentlyViewed = JSON.parse(sessionStorage.getItem('recentlyViewed')) || [];
         let downloadModal, authModal, referralModal, filterOffcanvas, sortOffcanvas; 
         let filters = { search: '', minPrice: null, maxPrice: null, sortBy: 'newest', category: 'All', onSaleOnly: false }; 
-        let liveViewerInterval, giveawayCountdownInterval, testimonialSwiper; 
+        let liveViewerInterval, giveawayCountdownInterval, testimonialSwiper, productGallerySwiper; 
         const liveViewCounts = {};
         let availableCoupons = {}, appliedCoupon = null, currentUser = null, checkoutAfterLogin = false;
         const toastContainer = document.querySelector('.toast-container');
         const BASE_URL = 'https://enougheditor.store';
+
+        // NEW: Back to top button global variable
+        let backToTopBtn;
         
         // --- CORE & UTILITY FUNCTIONS ---
         window.showToast = (message, type = 'success', duration = 4000) => { const icons = { success: 'bi-check-circle-fill', danger: 'bi-x-circle-fill', info: 'bi-info-circle-fill', warning: 'bi-exclamation-triangle-fill' }; const iconClass = icons[type] || icons.info; const toastEl = document.createElement('div'); toastEl.className = `toast show shadow-lg mb-2 toast-custom toast-${type}`; toastEl.setAttribute('role', 'alert'); toastEl.setAttribute('aria-live', 'assertive'); toastEl.setAttribute('aria-atomic', 'true'); toastEl.innerHTML = `<div class="toast-body d-flex align-items-center justify-content-between ps-4"><div class="d-flex align-items-center"><i class="bi ${iconClass} fs-4 me-3"></i><strong style="font-weight: 500;">${message}</strong></div><button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button></div>`; toastContainer.appendChild(toastEl); const toast = new bootstrap.Toast(toastEl, { delay: duration }); toast.show(); toastEl.addEventListener('hidden.bs.toast', () => toastEl.remove()); };
@@ -649,7 +727,7 @@
             const testimonials = [ 
                 { name: "Sameer K.", rating: 5, text: "Bhai, source code ekdum clean aur well-commented tha. Weeks ka kaam ghanto mein ho gaya. Seriously, paisa wasool!" }, 
                 { name: "Aisha R.", rating: 5, text: "Video editing assets bohot hi creative hain. Mere reels aur videos pehle se 10x better lag rahe hain. Thank you, Enough Editor!" }, 
-                { name: "Rahul 'CodeDev'", rating: 4, text: "Website template use kiya for a client project. Responsive design aur features ne dil jeet liya. Thoda customization karna pada but overall superb." }, 
+                { name: "Rahul 'CodeDev'", rating: 4, text: "Website template use kiya for a client project. Responsive design aur features ne dil jeet liya. Thoda customization karna पड़ा but overall superb." }, 
                 { name: "Pooja S.", rating: 5, text: "As a freelancer, ye assets life-saver hain. Quality top-notch hai aur delivery instant. Ab har project ke liye yahin se start karti hoon." }, 
                 { name: "Ravi G.", rating: 4, text: "Giveaway jeeta tha! Product sach me premium hai. Customer support bhi kaafi friendly aur quick hai. Bohot badiya kaam kar rahe ho, guys!" }, 
                 { name: "Ankit 'WebMaster'", rating: 5, text: "Maza aa gaya bhai! Code itna organized hai ki debugging ki zarurat hi nahi padi. Future projects ke liye fix hai, yahin se lunga sab kuch." } 
@@ -1040,6 +1118,18 @@
         
         window.submitReview = (productId) => { const nameInput = document.getElementById('review-name'); const textInput = document.getElementById('review-text'); const ratingEl = document.querySelector('input[name="rating"]:checked'); if (!currentUser) { showToast('Please login to submit a review.', 'danger'); renderAuthModal('login'); return; } if (!nameInput.value || !textInput.value || !ratingEl) { showToast('Please fill all review fields.', 'danger'); return; } const reviewData = { uid: currentUser.uid, name: nameInput.value, text: textInput.value, rating: parseInt(ratingEl.value, 10), date: new Date().toISOString() }; const db = getDatabase(); push(ref(db, `products/${productId}/reviews`), reviewData).then(() => { showToast('Thank you for your review!', 'success'); products[productId].reviews = products[productId].reviews || {}; products[productId].reviews[`temp_${Date.now()}`] = reviewData; renderProductView(productId); const reviewCollapse = document.getElementById('collapseThree'); if(reviewCollapse) new bootstrap.Collapse(reviewCollapse).show(); }).catch((error) => { console.error("Error submitting review: ", error); showToast("Error submitting your review.", 'danger'); }); };
         
+        // Function to handle thumbnail clicks for Swiper
+        window.handleThumbnailClick = (thumbElement, index) => {
+            if (productGallerySwiper) {
+                // Remove 'active' from all thumbnails first
+                document.querySelectorAll('.product-gallery .thumbnail').forEach(t => t.classList.remove('active'));
+                // Add 'active' to the clicked thumbnail immediately
+                thumbElement.classList.add('active');
+                // Slide the main Swiper to the corresponding index
+                productGallerySwiper.slideToLoop(index); 
+            }
+        };
+
         const renderProductView = (id) => {
             const p = products[id];
             if (!p) { window.location.hash = '#404'; return; }
@@ -1054,7 +1144,27 @@
             
             const ratingHTML = reviewCount > 0 ? `<div class="d-flex align-items-center gap-2 mb-3"><div class="star-rating-display">${renderStars(averageRating)}</div><span class="text-muted fw-medium">${averageRating.toFixed(1)} (${reviewCount} reviews)</span></div>` : '<div class="mb-3 text-muted">No reviews yet.</div>';
             const galleryImages = (p.galleryImages && Array.isArray(p.galleryImages) && p.galleryImages.length > 0) ? p.galleryImages : [p.imageUrl || 'https://via.placeholder.com/600x700.png/1e1e1e/ffffff?text=Product+Image'];
-            const galleryHTML = `<div class="product-gallery"><div class="main-image-container"><button class="btn btn-sm wishlist-btn" onclick="toggleWishlist('${id}')" title="Add to Wishlist"><i class="bi ${wishlist.some(item => item.id === id) ? 'bi-heart-fill' : 'bi-heart'}"></i></button><img src="${galleryImages[0]}" class="main-image" id="main-product-image" alt="${p.name} main view"></div><div class="thumbnail-strip">${galleryImages.map((imgUrl, index) => `<img src="${imgUrl}" class="thumbnail ${index === 0 ? 'active' : ''}" alt="${p.name} thumbnail ${index + 1}" onclick="updateMainImage(this, '${imgUrl}')">`).join('')}</div></div>`;
+            
+            // Render Swiper container without navigation buttons
+            const galleryHTML = `<div class="product-gallery">
+                                    <button class="btn btn-sm wishlist-btn" onclick="toggleWishlist('${id}')" title="Add to Wishlist"><i class="bi ${wishlist.some(item => item.id === id) ? 'bi-heart-fill' : 'bi-heart'}"></i></button>
+                                    <div class="swiper product-main-swiper">
+                                        <div class="swiper-wrapper">
+                                            ${galleryImages.map((imgUrl, index) => `
+                                                <div class="swiper-slide">
+                                                    <img src="${imgUrl}" class="main-image" alt="${p.name} image ${index + 1}">
+                                                </div>
+                                            `).join('')}
+                                        </div>
+                                        <!-- No swiper-button-next/prev here as requested -->
+                                    </div>
+                                    <div class="thumbnail-strip mt-3">
+                                        ${galleryImages.map((imgUrl, index) => `
+                                            <img src="${imgUrl}" class="thumbnail ${index === 0 ? 'active' : ''}" alt="${p.name} thumbnail ${index + 1}" data-index="${index}" onclick="handleThumbnailClick(this, ${index})">
+                                        `).join('')}
+                                    </div>
+                                </div>`;
+
             const previewButtonHTML = p.previewUrl ? `<a href="${p.previewUrl}" target="_blank" class="btn btn-lg btn-outline-primary"><i class="bi bi-eye-fill me-2"></i>Live Preview</a>` : '';
             
             let priceHTML = '';
@@ -1074,11 +1184,76 @@
             const descriptionHTML = `<div class="accordion-body">${p.description ? p.description.replace(/\n/g, '<br>') : 'No detailed description available.'}</div>`; const whatsInTheBoxHTML = p.whatsInTheBox ? `<div class="accordion-body"><ul class="list-unstyled mb-0">${p.whatsInTheBox.map(item => `<li><i class="bi bi-box-seam me-2 text-primary"></i>${item}</li>`).join('')}</ul></div>` : '<div class="accordion-body"><p class="text-muted">Details not available.</p></div>'; const reviewsListHTML = reviewCount > 0 ? reviews.map(r => `<div class="border-bottom pb-3 mb-3"><div class="d-flex justify-content-between align-items-center"><h6 class="mb-0">${r.name}</h6><div class="text-muted small">${renderStars(r.rating, 'text-warning small')}</div></div><p class="mb-1 mt-2">${r.text}</p><small class="text-muted">${new Date(r.date).toLocaleDateString()}</small></div>`).join('') : '<p class="text-muted text-center py-3">Be the first to review this product!</p>'; const hasUserReviewed = currentUser && reviews.some(r => r.uid === currentUser.uid); const reviewFormHTML = hasUserReviewed ? `<div class="alert alert-info text-center mt-4">You have already reviewed this product.</div>` : `<div class="mt-4 pt-4 border-top"><h5 class="mb-3">Write a Review</h5><form id="review-form" onsubmit="event.preventDefault(); submitReview('${id}');"><div class="mb-3"><label for="review-name" class="form-label">Name</label><input type="text" class="form-control" id="review-name" required value="${currentUser?.displayName || ''}"></div><div class="mb-3"><label class="form-label">Rating</label><div class="star-rating">${[5,4,3,2,1].map(star => `<input type="radio" id="${star}-stars" name="rating" value="${star}" required/><label for="${star}-stars" class="star">★</label>`).join('')}</div></div><div class="mb-3"><label for="review-text" class="form-label">Review</label><textarea class="form-control" id="review-text" rows="3" required></textarea></div><button type="submit" class="btn btn-primary" ${!currentUser ? 'disabled' : ''}>${currentUser ? 'Submit Review' : 'Login to Review'}</button></form></div>`; const reviewsHTML = `<div class="accordion-body">${reviewsListHTML}${reviewFormHTML}</div>`; const faqHTML = p.faq ? `<div class="accordion-body">${p.faq.map(item => `<div class="mb-3"><h6>${item.question}</h6><p class="text-muted mb-0">${item.answer}</p></div>`).join('')}</div>` : '<div class="accordion-body"><p class="text-muted">No frequently asked questions available.</p></div>'; const refundPolicyHTML = `<div class="accordion-body"><p>All sales are final. Due to the digital nature of our products, we do not offer refunds. If you have an issue with your download, contact <a href="mailto:enougheditor31@gmail.com">enougheditor31@gmail.com</a>, and we will ensure you receive your purchased item.</p></div>`; const accordionHTML = `<div class="mt-5 pt-4 border-top"><div class="accordion" id="productDetailsAccordion"><div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">Description</button></h2><div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#productDetailsAccordion">${descriptionHTML}</div></div><div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">What's in the Box?</button></h2><div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#productDetailsAccordion">${whatsInTheBoxHTML}</div></div><div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">Customer Reviews (${reviewCount})</button></h2><div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#productDetailsAccordion">${reviewsHTML}</div></div><div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">Frequently Asked Questions</button></h2><div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#productDetailsAccordion">${faqHTML}</div></div><div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">Refund Policy</button></h2><div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#productDetailsAccordion">${refundPolicyHTML}</div></div></div></div>`; let relatedHTML = ''; if (p.category) { const related = Object.entries(products).filter(([pid, prod]) => prod.category === p.category && pid !== id).slice(0, 4); if (related.length > 0) { relatedHTML = `<section class="section container mt-5"><h2 class="section-title text-center">You Might Also Like</h2><div class="row row-cols-2 row-cols-lg-4 g-4">${related.map(renderProductCard).join('')}</div></section>`; } }
             document.getElementById('product-view').innerHTML = `<div class="container">${topSectionHTML}${accordionHTML}</div>${relatedHTML}${renderRecentlyViewed()}`;
             initializeCountdownTimers(); // Re-initialize timers for the new view
-            const startLiveViewer = () => { clearInterval(liveViewerInterval); const viewerContainer = document.getElementById('live-viewer-container'); if (!viewerContainer) return; let count = liveViewCounts[id] || Math.floor(Math.random() * 40) + 11; const phrases = [ "people are viewing this right now", "others are interested in this", "creators are looking at this", "people have this in their cart" ]; let phraseIndex = 0; const updateViewer = () => { count += Math.floor(Math.random() * 3) - 1; count = Math.max(7, count); liveViewCounts[id] = count; const currentPhrase = phrases[phraseIndex]; phraseIndex = (phraseIndex + 1) % phrases.length; viewerContainer.innerHTML = `<i class="bi bi-eye-fill text-primary"></i><span><strong class="me-1">${count}</strong> ${currentPhrase}</span>`; }; updateViewer(); liveViewerInterval = setInterval(updateViewer, 2500); }; startLiveViewer();
+
+            // Destroy existing Swiper instance before creating a new one
+            if (productGallerySwiper) {
+                productGallerySwiper.destroy(true, true);
+                productGallerySwiper = null; // Reset the global variable
+            }
+
+            // Initialize Swiper for the product gallery only if more than one image exists
+            if (galleryImages.length > 1) { 
+                // Add a small delay to ensure DOM is fully rendered for Swiper to pick up elements
+                setTimeout(() => {
+                    productGallerySwiper = new Swiper('.product-main-swiper', {
+                        loop: true, // Enable looping for seamless navigation
+                        // Navigation buttons are explicitly hidden by CSS, so no need to configure here.
+                        on: {
+                            init: function() {
+                                // Ensure the correct thumbnail is active on init (Swiper's initial slide)
+                                const initialThumbnail = document.querySelector(`.product-gallery .thumbnail[data-index="${this.realIndex}"]`);
+                                if (initialThumbnail) {
+                                    initialThumbnail.classList.add('active');
+                                }
+                            },
+                            slideChange: function () {
+                                // Remove 'active' from all thumbnails
+                                document.querySelectorAll('.product-gallery .thumbnail').forEach(t => t.classList.remove('active'));
+                                // Add 'active' to the current thumbnail based on Swiper's realIndex
+                                const currentThumbnail = document.querySelector(`.product-gallery .thumbnail[data-index="${this.realIndex}"]`);
+                                if (currentThumbnail) {
+                                    currentThumbnail.classList.add('active');
+                                }
+                            },
+                        },
+                    });
+                }, 50); // Small delay to ensure DOM is ready
+            } else {
+                // If only one image, ensure no active class is left over from previous views and manually apply to the first thumbnail
+                document.querySelectorAll('.product-gallery .thumbnail').forEach(t => t.classList.remove('active'));
+                const singleThumbnail = document.querySelector(`.product-gallery .thumbnail[data-index="0"]`);
+                if (singleThumbnail) {
+                    singleThumbnail.classList.add('active');
+                }
+            }
+
+            // Start live viewer counter (already dynamic from previous iteration)
+            const startLiveViewer = () => { 
+                clearInterval(liveViewerInterval); 
+                const viewerContainer = document.getElementById('live-viewer-container'); 
+                if (!viewerContainer) return; 
+                let count = liveViewCounts[id] || Math.floor(Math.random() * 40) + 11; 
+                const phrases = [ 
+                    "people are viewing this right now", 
+                    "others are interested in this", 
+                    "creators are looking at this", 
+                    "people have this in their cart" 
+                ]; 
+                let phraseIndex = 0; 
+                const updateViewer = () => { 
+                    count += Math.floor(Math.random() * 3) - 1; 
+                    count = Math.max(7, count); // Ensure count doesn't go too low
+                    liveViewCounts[id] = count; 
+                    const currentPhrase = phrases[phraseIndex]; 
+                    phraseIndex = (phraseIndex + 1) % phrases.length; 
+                    viewerContainer.innerHTML = `<i class="bi bi-eye-fill text-primary"></i><span><strong class="me-1">${count}</strong> ${currentPhrase}</span>`; 
+                }; 
+                updateViewer(); 
+                liveViewerInterval = setInterval(updateViewer, 2500); 
+            }; 
+            startLiveViewer();
         };
 
-        window.updateMainImage = (thumbElement, newSrc) => { const mainImage = document.getElementById('main-product-image'); if (mainImage.src === newSrc) return; mainImage.style.opacity = '0'; setTimeout(() => { mainImage.src = newSrc; mainImage.style.opacity = '1'; }, 300); document.querySelectorAll('.product-gallery .thumbnail').forEach(t => t.classList.remove('active')); thumbElement.classList.add('active'); };
-        
         const renderProfileView = async () => { updateSchema(null, 'product-schema'); const view = document.getElementById('profile-view'); if (!currentUser) { view.innerHTML = `<div class="text-center"><h1>Access Denied</h1><p>Please <a href="#" onclick="renderAuthModal('login')">login</a> to view your profile.</p></div>`; return; } const db = getDatabase(); const userRef = ref(db, `users/${currentUser.uid}`); const userSnap = await get(userRef); let userData = userSnap.val() || {}; if (!userData.referralCode && currentUser.displayName) { const referralCode = (currentUser.displayName.substring(0, 4).toUpperCase() || 'USER') + currentUser.uid.substring(0, 4).toUpperCase(); const updates = {}; updates[`/users/${currentUser.uid}/referralCode`] = referralCode; updates[`/referralCodes/${referralCode}`] = { uid: currentUser.uid }; await update(ref(db), updates); userData.referralCode = referralCode; }
         const accountDetailsHTML = `<div class="card mb-4"><div class="card-header"><strong><i class="bi bi-person-badge-fill me-2"></i>Account Details</strong></div><div class="card-body"><p class="mb-2"><strong>Email:</strong> ${currentUser.email} ${currentUser.emailVerified ? '<span class="badge bg-success-subtle text-success-emphasis rounded-pill ms-2"><i class="bi bi-check-circle-fill me-1"></i>Verified</span>' : '<span class="badge bg-warning-subtle text-warning-emphasis rounded-pill ms-2">Not Verified</span>'}</p><form id="update-profile-form" class="mt-3"><label for="update-name-input" class="form-label"><strong>Display Name:</strong></label><div class="input-group"><input type="text" id="update-name-input" class="form-control" value="${currentUser?.displayName || ''}" required><button class="btn btn-outline-primary" type="submit">Update</button></div></form></div></div>`;
         const referralHTML = `<div class="card mb-4"><div class="card-header"><strong><i class="bi bi-gift-fill me-2"></i>Refer & Earn</strong></div><div class="card-body text-center"><p class="lead">Share your referral code. When friends use it, you both get a <strong class="text-primary">${settings.referralDiscount || 15}%</strong> coupon!</p><p class="h4">Your Referral Code:</p><div class="input-group mt-2" style="max-width:300px; margin:auto;"><input type="text" class="form-control text-center fs-5" value="${userData.referralCode || 'N/A'}" readonly><button class="btn btn-outline-secondary" onclick="navigator.clipboard.writeText('${userData.referralCode}'); showToast('Code Copied!', 'info');" ${!userData.referralCode ? 'disabled' : ''}><i class="bi bi-clipboard"></i></button></div></div></div>`;
@@ -1212,19 +1387,29 @@
         const switchView = (viewId) => { 
             clearInterval(liveViewerInterval); 
             clearInterval(giveawayCountdownInterval); 
-            // initializeCountdownTimers now handles its own clearing, so no need to clear here globally
+            // Destroy product gallery swiper instance if moving away from product view
+            if (productGallerySwiper) {
+                productGallerySwiper.destroy(true, true);
+                productGallerySwiper = null; // Reset the global variable
+            }
 
             document.querySelectorAll('.view').forEach(v => v.classList.remove('active')); 
             const viewEl = document.getElementById(viewId); 
             if (viewEl) viewEl.classList.add('active'); 
             let navId = viewId.replace('-view','').split('/')[0]; 
-            document.querySelectorAll('.navbar-nav .nav-link, .mobile-nav-item').forEach(l => l.classList.remove('active')); // Adjusted selector
-            document.querySelector(`.navbar-nav .nav-link[href="#${navId}"]`)?.classList.add('active'); 
-            if (navId === 'blog-post') navId = 'blog'; 
+            // Select all navigation links including mobile and desktop
+            document.querySelectorAll('.navbar-nav .nav-link, .mobile-nav-item').forEach(l => l.classList.remove('active')); 
+            
+            // Activate desktop nav link
+            const desktopNavLink = document.querySelector(`.navbar-nav .nav-link[href="#${navId}"]`); 
+            if (desktopNavLink) desktopNavLink.classList.add('active'); 
+
+            // Activate mobile nav item
+            if (navId === 'blog-post') navId = 'blog'; // Special handling for blog post to activate 'blog' nav item
             const mobileNavItem = document.querySelector(`.mobile-nav-item[data-nav="${navId}"]`); 
             if (mobileNavItem) mobileNavItem.classList.add('active'); 
-            // Removed radial menu specific logic
-            window.scrollTo(0, 0); 
+            
+            window.scrollTo({ top: 0, behavior: 'smooth' }); // This line ensures smooth scrolling to top on view change
         };
         const router = () => { 
             console.log('Router called. Current hash:', window.location.hash); // Debugging: Confirm router is called
@@ -1275,6 +1460,45 @@
                 if (window.matchMedia("(pointer: fine)").matches) { const cursorDot = document.createElement('div'); cursorDot.className = 'cursor-dot'; document.body.appendChild(cursorDot); const cursorOutline = document.createElement('div'); cursorOutline.className = 'cursor-outline'; document.body.appendChild(cursorOutline); let mouseX = 0, mouseY = 0, outlineX = 0, outlineY = 0; window.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.clientY; }); const animateCursor = () => { cursorDot.style.left = `${mouseX}px`; cursorDot.style.top = `${mouseY}px`; const delay = 0.1; outlineX += (mouseX - outlineX) * delay; outlineY += (mouseY - outlineY) * delay; cursorOutline.style.left = `${outlineX}px`; cursorOutline.style.top = `${outlineY}px`; requestAnimationFrame(animateCursor); }; animateCursor(); window.addEventListener('mousedown', e => { const splash = document.createElement('div'); splash.className = 'cursor-splash'; splash.style.left = `${e.clientX}px`; splash.style.top = `${e.clientY}px`; document.body.appendChild(splash); setTimeout(() => splash.remove(), 500); }); const interactiveElements = 'a, button, .btn, .form-check-input, .thumbnail, .star-rating label, [onclick], .swiper-pagination-bullet'; document.addEventListener('mouseover', e => { if (e.target.closest(interactiveElements)) document.body.classList.add('cursor-hover'); }); document.addEventListener('mouseout', e => { if (e.target.closest(interactiveElements)) document.body.classList.remove('cursor-hover'); }); }
                 downloadModal = new bootstrap.Modal(document.getElementById('downloadModal')); authModal = new bootstrap.Modal(document.getElementById('authModal')); referralModal = new bootstrap.Modal(document.getElementById('referralModal')); filterOffcanvas = new bootstrap.Offcanvas(document.getElementById('filterOffcanvas')); sortOffcanvas = new bootstrap.Offcanvas(document.getElementById('sortOffcanvas'));
                 
+                // NEW: Initialize Back to Top button functionality
+                backToTopBtn = document.getElementById('back-to-top-btn');
+                if (backToTopBtn) {
+                    backToTopBtn.addEventListener('click', () => {
+                        window.scrollTo({
+                            top: 0,
+                            behavior: 'smooth'
+                        });
+                    });
+
+                    window.addEventListener('scroll', () => {
+                        if (window.scrollY > 200) { // Show button after scrolling 200px
+                            backToTopBtn.classList.add('show');
+                        } else {
+                            backToTopBtn.classList.remove('show');
+                        }
+                    });
+                }
+
+                // NEW: Initialize Scroll Progress Bar functionality
+                const scrollProgressBar = document.getElementById('scroll-progress-bar');
+                if (scrollProgressBar) {
+                    window.addEventListener('scroll', () => {
+                        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+                        // Calculate scrollHeight taking into account browser differences and ensuring it's not zero
+                        const docHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight, document.body.offsetHeight, document.documentElement.offsetHeight, document.body.clientHeight, document.documentElement.clientHeight);
+                        const windowHeight = window.innerHeight;
+                        const scrollRange = docHeight - windowHeight;
+
+                        if (scrollRange > 0) { // Avoid division by zero if content is shorter than viewport
+                            const scrolled = (scrollTop / scrollRange) * 100;
+                            scrollProgressBar.style.width = scrolled + '%';
+                        } else {
+                            scrollProgressBar.style.width = '0%'; // No scrollbar if no scroll needed
+                        }
+                    });
+                }
+
+
                 const app = initializeApp(firebaseConfig); const database = getDatabase(app); const auth = getAuth(app); getAnalytics(app);
                 onAuthStateChanged(auth, user => { currentUser = user; updateAuthUI(user); syncCartWithFirebase(); router(); if (user && localStorage.getItem('showReferralPopup') === 'true') { referralModal.show(); localStorage.removeItem('showReferralPopup'); }});
                 
@@ -1301,7 +1525,7 @@
                     
                     router(); // Call router initially after data is loaded
                     onValue(ref(database, 'products'), (snap) => { products = snap.val() || {}; router()}); 
-                    onValue(ref(database, 'coupons'), (snap) => { availableCoupons = snap.val() || {}; if (window.location.hash === '#cart') renderCartView(); }); 
+                    onValue(ref(database, 'coupons'), (snap) => { availableCoupons = s.val() || {}; if (window.location.hash === '#cart') renderCartView(); }); 
                     onValue(ref(database, 'giveaways'), (snap) => { giveaways = snap.val() || {}; if (window.location.hash === '#giveaway') renderGiveawayView(); });
                     onValue(ref(database, 'settings'), (snap) => { 
                         settings = snap.val() || {};
